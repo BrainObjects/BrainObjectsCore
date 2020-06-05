@@ -1,7 +1,7 @@
 import XCTest
-@testable import TraceLogger
+@testable import Core
 
-final class LogEntryTests: XCTestCase {
+final class CoreTests: XCTestCase {
     func test_zero() {
         XCTFail()
     }

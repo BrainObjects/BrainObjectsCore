@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SoftwareEtudes",
+        "repositoryURL": "git@github.com:tuparev/SoftwareEtudes.git",
+        "state": {
+          "branch": "dev",
+          "revision": "8eb307c13ccd8e5b24b71763d1b509cf2b5fc60f",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

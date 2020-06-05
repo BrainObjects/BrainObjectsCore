@@ -3,5 +3,5 @@ import XCTest
 import BrainObjectsCoreTests
 
 var tests = [XCTestCaseEntry]()
-tests += LogEntryTests.allTests()
+tests += CoreTests.allTests()
 XCTMain(tests)

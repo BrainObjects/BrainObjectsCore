@@ -1,8 +1,9 @@
 import XCTest
 @testable import Core
 
-final class CoreTests: XCTestCase {
+final class ServiceTests: XCTestCase {
     func test_zero() {
+        // We need this to start with and see that the tests work
         XCTFail()
     }
 

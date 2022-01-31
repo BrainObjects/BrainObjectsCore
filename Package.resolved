@@ -6,7 +6,7 @@
         "repositoryURL": "git@github.com:tuparev/SoftwareEtudes.git",
         "state": {
           "branch": "dev",
-          "revision": "e4d5109fbaf655026edc1338a419d7230ee77f73",
+          "revision": "f944c9e771ff76b2a624350b8a7b23993ea76e59",
           "version": null
         }
       },
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/apple/swift-nio.git",
         "state": {
           "branch": null,
-          "revision": "43931b7a7daf8120a487601530c8bc03ce711992",
-          "version": "2.25.1"
+          "revision": "51c3fc2e4a0fcdf4a25089b288dd65b73df1b0ef",
+          "version": "2.37.0"
         }
       }
     ]

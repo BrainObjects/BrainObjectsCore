@@ -1,18 +1,39 @@
+//===----------------------------------------------------------------------===//
 //
-//  Service.swift
-//  
+// This source file is part of the BrainObjects open source project
 //
-//  Created by Georg Tuparev on 31/01/2022.
+// Copyright (c) 2021-2022 Tuparev Technologies and the BrainObjects project
+// authors.
+// Licensed under MIT License Modern Variant
 //
+// See LICENSE for license information
+// See CONTRIBUTORS.md for the list of BrainObjects project authors
+//
+// SPDX-License-Identifier: MIT-Modern-Variant
+//
+//===----------------------------------------------------------------------===//
 
 import Foundation
 import NIOCore
 import NIOPosix
 import SoftwareEtudes
 
+//FIXME: Brainstorm!
+// - Do we need to decide here on the protocol (TCP/IP or UDP)?
+// - What protocols should we support? Some emerging binary stuff?
+// - How to handle responses?
+
 public class Service {
 
-    public init?(name: String) {
+    public private(set) var name: String        // Name of the service
+    public private(set) var subsystem: String?  // Used for logging and tracing
+    public private(set) var label: String?      // Used for monitoring multiple instances 
+
+    public internal(set) var isRunning = false
+    
+    init?(name: String) {
+        self.name = name
+
         //TODO: Read command line arguments and environment (configuration)
         // Swift's own Arguments Parser is bag of unusable 💩💩💩. Until SoftwareEtudes replacement is ready, we must take few shortcuts...
 
@@ -32,3 +53,8 @@ public class Service {
         //TODO: Start accepting requests
     }
 }
+
+
+// Note: to get the binary's folder use: Process().executableURL
+
+

@@ -2,7 +2,7 @@
 
 ## Adopted conventions
 
-- Services' executable binary should be placed in separate folder having the name of the service. Besides the executable, several configuration files sharing the name of the service are expected e.g.<br>
+- Services' executable binary should be placed in a separate folder having the name of the service. Besides the executable, several configuration files sharing the name of the service are expected e.g.<br>
 
 ```
 /usr/local/bin/my_service/
